@@ -17,7 +17,7 @@ style */
     padding: 20px;
     display: flex;
     align-items: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     border-bottom: 1px solid #f2f2f2;
 }
@@ -40,12 +40,29 @@ style */
     color: #f1356d;
 }
 
+.navbar .logout-button {
+    margin-left: 16px;
+    padding: 8px 16px;
+    background-color: #9a1414;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout-button:hover {
+    background-color: #d81b53;
+}
+
 
 /* form styling */
 
 .form-container {
     max-width: 200px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .form-container form {
@@ -87,4 +104,206 @@ style */
 .form-container label input[type="checkbox"] {
     width: 25px;
     height: 25px;
+}
+
+
+/*
+Register.js styling
+*/
+
+.register-form-container,
+.login-form-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.register-form-container h2,
+.login-form-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-form,
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input,
+.form-select,
+.form-button {
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in width */
+}
+
+.form-button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* AddStat style */
+
+.add-stat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.add-stat-form-group {
+    margin-bottom: 20px;
+}
+
+.add-stat-form-group.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-stat-input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.add-stat-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-stat-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* stat form style */
+
+.stat-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.stat-form {
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.stat-form-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.stat-form-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-form-input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    height: 20px;
+    /* Set a fixed height for input */
+}
+
+.stat-form-checkbox {
+    margin-bottom: 30px;
+    margin-top: 12px;
+    transform: scale(2);
+}
+
+.stat-form-button {
+    background-color: #afafaf;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+    /* Smooth transition over 0.3 seconds */
+}
+
+.stat-form-button:hover {
+    background-color: #25b249;
+    color: white;
+}
+
+
+/* left stat navbar component */
+
+.stat-nav-bar-title {
+    color: #9a1414;
+    font-family: 'Gill Sans';
+    font-size: 50px;
+}
+
+.stat-nav-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.stat-squares {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid #333333b3;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+.stat-navbar-component {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.stat-navbar-component:hover {
+    background-color: #f0f0f0;
+    /* Change background color on hover */
 }
